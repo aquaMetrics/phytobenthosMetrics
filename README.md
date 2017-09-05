@@ -9,7 +9,7 @@ An R package to calculate aquatic metrics
 In R: Install the development version from GitHub:  
 ``install.packages("devtools")``  
 ``library(devtools)``   
-``install_github("aquaMetrics/aquaMetrics")``  
+``install_github("aquaMetrics/phytobenthosMetrics")``  
   
 
 
