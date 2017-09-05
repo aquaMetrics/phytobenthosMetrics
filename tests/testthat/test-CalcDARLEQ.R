@@ -22,7 +22,7 @@ test_that("Check DARLEQ-TAXON-DICTIONARY is same as DALREQlookup", {
   # DARLEQ-TAXON-DICTIONARY is in csv file for easy reading and comparison on github
 
   DARLEQ_TAXON_DICTIONARY  <-  read.csv(system.file("extdata","DARLEQ-TAXON-DICTIONARY.csv",
-                                             package = "aquaMetrics"), stringsAsFactors = F)
+                                             package = "phytobenthosMetrics"), stringsAsFactors = F)
 
   # LookUpDARLEQ2 table is held in sys.data file as a binary for fast access in the package
   LookUpDARLEQ2 <- phytobenthosMetrics:::LookUpDARLEQ2
@@ -41,17 +41,17 @@ test_that("CalcDARLEQ returns same results as DARLEQ2 tool outputs", {
 
     # load example data
     riverAquaMetrics  <-  read.csv(system.file("extdata","diatomRivers2012-aquametrics-format.csv",
-                                   package = "aquaMetrics"))
+                                   package = "phytobenthosMetrics"))
 
     lakesAquaMetrics  <-  read.csv(system.file("extdata","diatomLakes2012-aquametrics-format.csv",
-                                               package = "aquaMetrics"))
+                                               package = "phytobenthosMetrics"))
 
     # load matching outputs from DARLEQ2 - 'here's one I prepared earlier...'
     riverDARLEQRResults  <-  read.csv(system.file("extdata","ResultsDARLEQRiver2012-tdi4.csv",
-                                     package = "aquaMetrics"))
+                                     package = "phytobenthosMetrics"))
 
     lakesDARLEQRResults  <-  read.csv(system.file("extdata","ResultsDARLEQLakes2012-ltdi2.csv",
-                                                  package = "aquaMetrics"))
+                                                  package = "phytobenthosMetrics"))
 
     # run example data through CalcDARLEQ function
     riverAquaMetricsResults  <-  CalcDARLEQ(riverAquaMetrics, metric="rivers")

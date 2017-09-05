@@ -1,4 +1,4 @@
 library(testthat)
-library(phybenthosMetrics)
+library(phytobenthosMetrics)
 
-test_check("phybenthosMetrics")
+test_check("phytobenthosMetrics")
