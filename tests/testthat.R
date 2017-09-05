@@ -1,4 +1,4 @@
 library(testthat)
-library(aquaMetrics)
+library(phybenthosMetrics)
 
-test_check("aquaMetrics")
+test_check("phybenthosMetrics")

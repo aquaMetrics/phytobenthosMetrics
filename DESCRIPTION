@@ -13,7 +13,7 @@ Suggests:
 Depends: 
   R (>= 2.10)
 License: MIT + file LICENSE
-URL: https://github.com/aquaMetrics/aquaMetrics
+URL: https://github.com/aquaMetrics/phytobenthosMetrics
 LazyLoad: yes
 LazyData: yes
 VignetteBuilder: knitr
