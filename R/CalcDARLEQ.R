@@ -7,7 +7,6 @@
 #' have different environmental preferences.
 #'
 #' @name CalcDARLEQ
-#' @aliases CalcDARLEQ
 #' @usage CalcDARLEQ(data = NULL, metric = NULL, version = "latest")
 #' @param data A dataframe containing diatoms taxa with
 #' \emph{eight columns in the specified order} (naming of the columns is not important):
@@ -96,13 +95,16 @@
 #' DARLEQoutputs <- CalcDARLEQ(demoDiatomRiverData, metric = 'rivers')
 #' }
 #' @export
-######################################################################################
-#                                                                                    #
-# Version:  1.0                                                                      #
-# Revision: 0 - 10/02/2015. Published version                                        #
-#                                                                                    #
-######################################################################################
+
 CalcDARLEQ <- function(data=NULL, metric=NULL, version="latest") {
+
+
+  ######################################################################################
+  #                                                                                    #
+  # Version:  1.0                                                                      #
+  # Revision: 0 - 10/02/2015. Published version                                        #
+  #                                                                                    #
+  ######################################################################################
 
   # Input handling
   if (is.null(data))

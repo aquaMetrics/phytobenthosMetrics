@@ -17,7 +17,6 @@ Specifically coded to be used with TIBCO Enterprise Runtime for R (TERR).
  Date: \tab 2017-03-30\cr
  License: \tab MIT\cr
 }
-
 This package contains several functions which compute multiple ecological
 metrics using multiple season combinations.
 \itemize{
@@ -26,7 +25,6 @@ metrics using multiple season combinations.
 }
 \author{
 Scottish Environment Protection Agency
-
 Maintainer: Carlos Ruiz \email{carlos.ruiz@sepa.org.uk}
 }
 \keyword{package}
