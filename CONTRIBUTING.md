@@ -9,18 +9,22 @@ To help keep this code repository easy to maintain and the code easy to follow, 
 #### Open issue
 
 - Open an issue and describe what your update is planning to address
-- It's usually helpful to include a work exampled of the update or issue
+- It's usually helpful to include a worked example of the update or issue
 - If you are not a maintainer, wait for feedback and comments - maybe there are different approaches that need exploring
 
 #### Create new branch
 
-- Once the issue is discussed, then create a new branch called 'issue-1' on github
-- Pull to Rstudio and Checkout branch 'issue-1' branch
-- Make changes
-- Run checks and tests locally - then commit (this includes standard [lintr](https://github.com/jimhester/lintr) rules with exception that camel case is used for function/variable names e.g. 'coolFunction' not 'cool_function')
+- Once the issue is discussed, then create a new branch called `issue-1` on github
+- Pull to Rstudio (or via command line to your favourite code editor) and Checkout branch `issue-1`
+- Do some coding or documentation etc
+- Add comments as required to explain the `why` rather than the `how`
+- Not every line needs comments - but any large or unusual sections
+- Document code and follow standard CRAN checks and file structure
+- [R Package](http://r-pkgs.had.co.nz/) guidance is a very useful resource
+- Run checks and tests locally - before commit (this includes standard [lintr](https://github.com/jimhester/lintr) rules with exception that camel case is used for function/variable names e.g. 'coolFunction' not 'cool_function')
 - Recommend downloading lintr from github. The CRAN package appears out of date and doesn't work on Windows:  
 `library(devtools)`   
-`install_github(jimhester/lintr)`  
+`install_github(jimhester/lintr)`
 
 #### Commit
 
