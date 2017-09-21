@@ -17,7 +17,7 @@ To help keep this code repository easy to maintain and the code easy to follow, 
 - Once the issue is discussed, then create a new branch called `issue-1` on github
 - Pull to Rstudio (or via command line to your favourite code editor) and Checkout branch `issue-1`
 - Do some coding or documentation etc
-- Add comments as required to explain the `why` rather than the `how`
+- Add comments as required to explain the *why* rather than the *how*
 - Not every line needs comments - but any large or unusual sections
 - Document code and follow standard CRAN checks and file structure
 - [R Package](http://r-pkgs.had.co.nz/) guidance is a very useful resource
@@ -38,6 +38,6 @@ To help keep this code repository easy to maintain and the code easy to follow, 
 - Wait for a maintainer to review, they will check no tests break, and the code has been tested if required
 - Change are merged to master and the 'test-1' branch deleted.
 
-
+#### All Done! ☺ 
 
 
