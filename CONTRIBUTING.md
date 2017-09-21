@@ -14,7 +14,7 @@ To help keep this code repository easy to maintain and the code easy to follow, 
 
 #### Create new branch
 
-- Once the issue is discussed, then create a new branch called `issue-1` on github
+- Once the issue is discussed, then create a new branch called `issue-1` on Github
 - Pull to Rstudio (or via command line to your favourite code editor) and Checkout branch `issue-1`
 - Do some coding or documentation etc
 - Add comments as required to explain the *why* rather than the *how*
@@ -22,7 +22,7 @@ To help keep this code repository easy to maintain and the code easy to follow, 
 - Document code and follow standard CRAN checks and file structure
 - [R Package](http://r-pkgs.had.co.nz/) guidance is a very useful resource
 - Run checks and tests locally - before commit (this includes standard [lintr](https://github.com/jimhester/lintr) rules with exception that camel case is used for function/variable names e.g. 'coolFunction' not 'cool_function')
-- Recommend downloading lintr from github. The CRAN package appears out of date and doesn't work on Windows:  
+- Recommend downloading lintr from Github. The CRAN package appears out of date and doesn't work on Windows:  
 `library(devtools)`   
 `install_github(jimhester/lintr)`
 
@@ -34,9 +34,9 @@ To help keep this code repository easy to maintain and the code easy to follow, 
 
 #### Pull request
 
-- On github create a Pull Request to master branch from your issue-1 branch
+- On Github create a Pull Request to master branch from your issue-1 branch
 - Wait for a maintainer to review, they will check no tests break, and the code has been tested if required
-- Change are merged to master and the 'test-1' branch deleted.
+- Changes are merged to master and the 'test-1' branch deleted.
 
 #### All Done! ☺ 
 
