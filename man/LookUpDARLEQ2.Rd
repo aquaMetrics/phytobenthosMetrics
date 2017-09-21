@@ -5,17 +5,21 @@
 \alias{LookUpDARLEQ2}
 \title{DARLEQ. TDIs associated with the presence of diatoms.
 TDI (Trophic Diatom Index) associated with diatoms in rivers and lakes,
-providing a information on the nutrient status of rivers, as appear in DARLEQ2}
+providing a information on the nutrient status of rivers, as appear in
+DARLEQ2}
 \format{A data frame with 1275 rows and 24 variables}
 \description{
 The columns are as follows:
 }
 \details{
 \itemize{
- \item TaxonId - Code added by tool developer. This column should have unique codes
+ \item TaxonId - Code added by tool developer. This column should have unique
+ codes
  and all rows in the column should have an entry.
- \item NBSCode - \href{https://api.nbnatlas.org/;jsessionid=821F3DBADB0ABD14F10EA7B2354EE741#ws80}{NBN Atlas identifier code}
- more specifically the \href{http://nbn-sd-dev.nhm.ac.uk/glossary.php}{'TVK'}
+ \item NBSCode -
+ \href{https://api.nbnatlas.org/#ws80}{NBN Atlas identifier code}
+ more specifically
+ the \href{http://nbn-sd-dev.nhm.ac.uk/glossary.php}{'TVK'}
  code created by the Natural History Museum. This is not necessarily the
  preferred NBN Atlas code. These are GUIDs, each taxon concept should have a
  unique GUID/code, therefore each row in this table has a unique

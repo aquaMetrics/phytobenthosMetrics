@@ -1,15 +1,18 @@
-######################################################################################
-#                                                                                    #
-# Version:  1.0                                                                      #
-# Revision: 0 - 10/02/2015. Published version                                        #
-#                                                                                    #
-######################################################################################
+# As this code was writtne before linting enforced - skip checks
+# nolint start
+##############################################################################
+# Version:  1.0
+# Revision: 1.1 - 10/02/2015. Published version
+#
+##############################################################################
 # Parameters:
-# x:      EQR mean within a site
-# n:      Number of samples used to calculate the mean
-# metric: Either "rivers" or "lakes"
-# class:  Status class of the EQR mean. "Bad", "Poor", "Moderate", "Good" or "High"
-# b:      Matrix of EQR status class boundaries as defined in DARLEQ.R / DARLEQ.L
+# x: EQR mean within a site
+# n: Number of samples used to calculate the mean
+# metric: Either "rivers" or "lakes" class:
+# Status class of the EQR mean:
+# "Bad", "Poor", "Moderate", "Good" or "High"
+# b: Matrix of EQR status class boundaries as defined in DARLEQ.R / DARLEQ.L
+
 .DARLEQ.CoC <- function(x, n, metric, class, b) {
 
   # Input handling
@@ -31,7 +34,7 @@
 
   if (is.null(b))
     stop("Boundary classes must be specified in vector parameter 'b'")
-  
+
   # Make boundaries readable
   b.bad <- b[1]
   b.poor <- b[2]
@@ -41,7 +44,7 @@
   # Definition of the fitting function
   if (metric == "rivers") {
 
-    r <- function (m) { y <- 0.03 + 0.177 * m + (-0.157) * m ^ 5.73 } 
+    r <- function (m) { y <- 0.03 + 0.177 * m + (-0.157) * m ^ 5.73 }
 
   } else {
 
@@ -78,7 +81,6 @@
     # Standard Error and (logit) transformation of variables
     SE <- r(x) / sqrt(n)
     trns.x <- log(x / (1 - x))
-    #trns.err <- SE / (x * (1 - x))
 
     # Transformed standard error for each boundary
     trns.err.b <- (r(b.bad) / sqrt(n))/(b.bad * (1 - b.bad))
@@ -130,3 +132,4 @@
   ret
 
 }
+# nolint end

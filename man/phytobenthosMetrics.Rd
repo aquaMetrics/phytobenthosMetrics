@@ -6,7 +6,8 @@
 \alias{phytobenthosMetrics-package}
 \title{Phytobenthos Biotic indices}
 \description{
-Metrics for assessing ecological indicators of biodiversity in rivers and lakes.
+Metrics for assessing ecological indicators of biodiversity in rivers and
+lakes.
 Specifically coded to be used with TIBCO Enterprise Runtime for R (TERR).
 }
 \details{
@@ -20,11 +21,11 @@ Specifically coded to be used with TIBCO Enterprise Runtime for R (TERR).
 This package contains several functions which compute multiple ecological
 metrics using multiple season combinations.
 \itemize{
- \item DARLEQ (\code{\link{CalcDARLEQ}})\cr Diatoms for Assessing River and Lake Ecological Quality
+ \item DARLEQ (\code{\link{CalcDARLEQ}})\cr Diatoms for Assessing River and
+ Lake Ecological Quality
 }
 }
 \author{
 Scottish Environment Protection Agency
 Maintainer: Carlos Ruiz \email{carlos.ruiz@sepa.org.uk}
 }
-\keyword{package}

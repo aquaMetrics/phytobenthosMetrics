@@ -1,11 +1,11 @@
 #' @title Phytobenthos Biotic indices
 #'
 #' @description
-#' Metrics for assessing ecological indicators of biodiversity in rivers and lakes.
+#' Metrics for assessing ecological indicators of biodiversity in rivers and
+#' lakes.
 #' Specifically coded to be used with TIBCO Enterprise Runtime for R (TERR).
 #'
 #' @name phytobenthosMetrics
-#' @aliases phytobenthosMetrics
 #' @docType package
 #' @details
 #' \tabular{ll}{
@@ -18,25 +18,29 @@
 #' This package contains several functions which compute multiple ecological
 #' metrics using multiple season combinations.
 #' \itemize{
-#'  \item DARLEQ (\code{\link{CalcDARLEQ}})\cr Diatoms for Assessing River and Lake Ecological Quality
+#'  \item DARLEQ (\code{\link{CalcDARLEQ}})\cr Diatoms for Assessing River and
+#'  Lake Ecological Quality
 #' }
 #'
-#' @keywords package
 #' @author Scottish Environment Protection Agency
 #' Maintainer: Carlos Ruiz \email{carlos.ruiz@@sepa.org.uk}
 NULL
 
 #' DARLEQ. TDIs associated with the presence of diatoms.
 #' TDI (Trophic Diatom Index) associated with diatoms in rivers and lakes,
-#' providing a information on the nutrient status of rivers, as appear in DARLEQ2
+#' providing a information on the nutrient status of rivers, as appear in
+#' DARLEQ2
 #'
 #' The columns are as follows:
 #'
 #' \itemize{
-#'  \item TaxonId - Code added by tool developer. This column should have unique codes
+#'  \item TaxonId - Code added by tool developer. This column should have unique
+#'  codes
 #'  and all rows in the column should have an entry.
-#'  \item NBSCode - \href{https://api.nbnatlas.org/;jsessionid=821F3DBADB0ABD14F10EA7B2354EE741#ws80}{NBN Atlas identifier code}
-#'  more specifically the \href{http://nbn-sd-dev.nhm.ac.uk/glossary.php}{'TVK'}
+#'  \item NBSCode -
+#'  \href{https://api.nbnatlas.org/#ws80}{NBN Atlas identifier code}
+#'  more specifically
+#'  the \href{http://nbn-sd-dev.nhm.ac.uk/glossary.php}{'TVK'}
 #'  code created by the Natural History Museum. This is not necessarily the
 #'  preferred NBN Atlas code. These are GUIDs, each taxon concept should have a
 #'  unique GUID/code, therefore each row in this table has a unique

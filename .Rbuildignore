@@ -4,6 +4,8 @@
 ^\.travis\.yml$
 ^appveyor\.yml$
 ^codecov\.yml$
+^\.lintr$
+^CONTRIBUTING\.md$
 dev
 backup
 
