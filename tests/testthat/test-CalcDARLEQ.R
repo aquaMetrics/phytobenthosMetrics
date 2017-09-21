@@ -108,6 +108,7 @@ test_that("CalcDARLEQ returns same results as DARLEQ2 tool outputs", {
 
 })
 
+devtools::install_github("jimhester/lintr")
 
 if (requireNamespace("lintr", quietly = TRUE)) {
   context("lints")
