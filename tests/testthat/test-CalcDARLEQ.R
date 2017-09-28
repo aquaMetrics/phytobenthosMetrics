@@ -27,23 +27,26 @@ test_that("Check DARLEQ-TAXON-DICTIONARY is same as DALREQlookup", {
   # github
 
   darleqTaxonDictionary  <-  read.csv(system.file("extdata",
-                               "DARLEQ-TAXON-DICTIONARY.csv",
+                               "DARLEQ2_TAXON_DICTIONARY.csv",
                                package = "phytobenthosMetrics"),
                                stringsAsFactors = F)
 
  # LookUpDARLEQ2 table is held in sys.data file as a binary for fast access in
  # the package
   lookUpDARLEQ2 <- phytobenthosMetrics:::LookUpDARLEQ2
- # ignore columns - errors due to unicode/ASCII corruption:
- # 'Authority','DARESAuthority'
-  mismatches <- all.equal(darleqTaxonDictionary[, -c(6, 10)],
-                          lookUpDARLEQ2[, -c(6, 10)])
+
+# check that the binary file matches the plain text csv file
+
+  mismatches <- all.equal(darleqTaxonDictionary,
+                          lookUpDARLEQ2)
 
   expect_true(mismatches == T)
 
-  # If this is false, check if either file has been changed and sync. Changes in
-  # taxonomy / scores should flow from DARLEQ-TAXON-DICTIONARY to LookUpDARLEQ2
+  # If this test fails, check if either file has been changed. Changes in
+  # taxonomy / scores should flow from DARLEQ2_TAXON_DICTIONARY to LookUpDARLEQ2
   # - if changes agreed by all
+  # Follow guidance for updating the LookUpDARLEQ2/sysdata:
+  # http://r-pkgs.had.co.nz/data.html#data-sysdata
 
 })
 
